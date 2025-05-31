@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Feedback System</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Smart Feedback & Review System</h1>
+        <form id="feedback-form">
+          <div class="form-group"><input type="text" id="name" placeholder="Your Name"required/></div>
+          <div class="form-group"><input type="email" id="email" placeholder="Your email"required/></div>
+          <div class="Rating">
+            <label>Rating</label>
+            <select id="rating">
+                <option value="">Select</option>
+                <option value="1">*</option>
+                <option value="2">**</option>
+                <option value="3">***</option>
+                <option value="4">****</option>
+                <option value="5">*****</option>
+            </select>
+        </div>
+            <textarea id="comment" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+             </form>
+             
+            <h2>All Feedbacks</h2>
+            <div id="feedback-list"></div>
+        </div>
+        <script src="script.js"></script>
+        
+    
+</body>
+</html>
